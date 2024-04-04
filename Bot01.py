@@ -23,6 +23,7 @@ if __name__ == "__main__":
     delay = 0.1
     
     while True:
+        game_window_title = "ToramOnline"  
         active_window = gw.getActiveWindow()
         if active_window is not None and active_window.title == game_window_title:
             time.sleep(1)
