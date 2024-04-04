@@ -23,6 +23,8 @@ if __name__ == "__main__":
     delay = 0.1
     
     while True:
+        active_window = gw.getActiveWindow()
+        if active_window is not None and active_window.title == game_window_title:
             time.sleep(1)
             tSkill+=1
             tBuff+=1
