@@ -33,28 +33,12 @@ if __name__ == "__main__":
             tBuff1+=0.25
             tBuff2+=0.25
             
-            if(tBuff2>=900):
-                time.sleep(1)
-                tBuff1+=1
-                tBuff2+=1
-                tSkill+=1
-                press('8',2)
-                tBuff2 = 0
-                
-            if(tBuff1>=60):
-                time.sleep(1)
-                tBuff1+=1
-                tBuff2+=1
-                tSkill+=1
-                press('6',2)
-                tBuff1 = 0
-                
             if(tSkill>=2):
                 time.sleep(0.5)
                 tBuff1+=0.5
                 tBuff2+=0.5
                 tSkill+=0.5
-    
+                
                 for _ in range(10-random.randint(0, 1)):
                     press('7',1)
                     now = delay+random.randint(10, 25)/100
@@ -64,5 +48,18 @@ if __name__ == "__main__":
                     tSkill+=now
                 tSkill = 0
             
-
+            if(tBuff1>=60):
+                time.sleep(1)
+                tBuff1+=1
+                tBuff2+=1
+                tSkill+=1
+                press('6',2)
+                tBuff1 = 0
             
+            if(tBuff2>=900):
+                time.sleep(1)
+                tBuff1+=1
+                tBuff2+=1
+                tSkill+=1
+                press('8',2)
+                tBuff2 = 0
