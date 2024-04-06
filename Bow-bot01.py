@@ -33,7 +33,7 @@ if __name__ == "__main__":
             tBuff1+=0.25
             tBuff2+=0.25
             
-            if(tSkill>=2):
+            if(tSkill>=1.5):
                 time.sleep(0.5)
                 tBuff1+=0.5
                 tBuff2+=0.5
