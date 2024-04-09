@@ -52,7 +52,7 @@ if __name__ == "__main__":
                 now = delay+random.randint(10, 25)/100
                 time.sleep(now)
             
-            #Count time
+            #Count timef
             current_time = datetime.datetime.now()
             different_time = current_time - prev_time
             different_run_time = current_time - run_time
